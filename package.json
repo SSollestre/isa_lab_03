@@ -1,7 +1,11 @@
 {
-  "name": "my-package",
+  "name": "my-server-app",
+  "version": "1.0.0",
+  "description": "A simple Node.js server application",
+  "main": "server.js",
   "scripts": {
-    "build": "babel src -d lib",
-    "test": "jest"
-  }
+    "start": "node server.js"
+  },
+  "author": "Your Name",
+  "license": "MIT"
 }
