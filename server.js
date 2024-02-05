@@ -4,7 +4,7 @@ const lang = require("./lang/en/strings");
 const utils = require('./modules/utils')
 
 const server = http.createServer((req, res) => {
-  const name = url.parse(req.url, true).query.name;
+  const name = url.parse(req.url, true).query.name || "User";
   const userString = lang.userString.replace('%1', name);
   const date = utils.getDate();
 
